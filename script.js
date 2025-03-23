@@ -21,19 +21,19 @@ function showSection(section) {
   section.classList.remove("hidden");
 }
 
-// Evento para mostrar la sección de Promociones
+//  Mostrar la sección de Promociones
 promocionesLink.addEventListener("click", function (event) {
   event.preventDefault(); // Evita el comportamiento predeterminado del enlace
   showSection(promocionesSection);
 });
 
-// Evento para mostrar la sección de About
+// Mostrar la sección de About
 aboutLink.addEventListener("click", function (event) {
   event.preventDefault();
   showSection(aboutSection);
 });
 
-// Evento para mostrar la sección de Contacto
+// Mostrar la sección de Contacto
 contactoLink.addEventListener("click", function (event) {
   event.preventDefault();
   showSection(contactSection);
@@ -52,7 +52,7 @@ logo.addEventListener("click", function (event) {
   mainContent.classList.remove("hidden");
 });
 
-// Evento para el menú desplegable en móviles
+// Menú desplegable en móviles
 document.getElementById("menu-icon").addEventListener("click", function () {
   var menu = document.getElementById("menu");
   menu.classList.toggle("active");
